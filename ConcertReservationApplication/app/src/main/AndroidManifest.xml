@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.concertreservationapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ConcertReservationApplication">
+        <activity android:name=".ui.homePage.homePageModel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Concert.concertPage.concertPageModel"/>
+        <activity android:name=".ui.Concert.addNewPage.addNewConcertModel"/>
+        <activity android:name=".ui.admin.adminPage.adminPageModel"/>
+        <activity android:name=".ui.ticket.userPage.userPageModel"/>
+        <activity android:name=".ui.ticket.myTicketsPage.myTicketsPageModel"/>
+        <activity android:name=".ui.ticket.viewConcertsPage.viewConcertsPageModel"/>
+        <activity android:name=".ui.ticket.selectedConcertPage.selectedConcertPageModel"/>
+        <activity android:name=".ui.ticket.selectedTicketPage.selectedTicketPageModel"/>
+        <activity android:name=".ui.ticket.reserveTicket.reserveConcertPageModel"/>
+        <activity android:name=".ui.admin.statsForConcerts.statsForConcertsModel"/>
+        <activity android:name=".ui.admin.statsForLargestProfitMonth.statsForLargestProfitMonthModel"/>
+        <activity android:name=".ui.Concert.editPage.editPageModel"/>
+        <activity android:name=".ui.Concert.ediConcertPage.editConcertPageModel"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

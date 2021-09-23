@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ConcertReservationApplication</string>
+    <string name="concert_reservation_application">Concert Reservation Application</string>
+    <string name="view_concerts">View concerts</string>
+    <string name="my_ticket">My Ticket</string>
+    <string name="cancel">cancel</string>
+    <string name="concert_details">Concert details</string>
+    <string name="concertTitle">Concert title</string>
+    <string name="concertDate">Concert date</string>
+    <string name="concertLocation">Concert location</string>
+    <string name="concertDescription">Concert description</string>
+    <string name="concertPrice">concert price</string>
+    <string name="reserve">reserve</string>
+    <string name="ticket_details">Ticket details</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="ticketCategory">Ticket category</string>
+    <string name="email">email</string>
+    <string name="phoneNumber">phone number</string>
+    <string name="numberOfArenaTickets">number of arena tickets</string>
+    <string name="priceOfGrandstandTickets">price of grandstand</string>
+</resources>

@@ -1,0 +1,17 @@
+com.example.concertreservationapplication.dao
+com.example.concertreservationapplication.daomemory
+com.example.concertreservationapplication.domain
+com.example.concertreservationapplication.ui.admin.adminPage
+com.example.concertreservationapplication.ui.admin.statsForConcerts
+com.example.concertreservationapplication.ui.admin.statsForLargestProfitMonth
+com.example.concertreservationapplication.ui.Concert.addNewPage
+com.example.concertreservationapplication.ui.Concert.concertPage
+com.example.concertreservationapplication.ui.Concert.ediConcertPage
+com.example.concertreservationapplication.ui.Concert.editPage
+com.example.concertreservationapplication.ui.homePage
+com.example.concertreservationapplication.ui.ticket.myTicketsPage
+com.example.concertreservationapplication.ui.ticket.reserveTicket
+com.example.concertreservationapplication.ui.ticket.selectedConcertPage
+com.example.concertreservationapplication.ui.ticket.selectedTicketPage
+com.example.concertreservationapplication.ui.ticket.userPage
+com.example.concertreservationapplication.ui.ticket.viewConcertsPage

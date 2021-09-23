@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textForChoseTitleEditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Edit Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForAddNewConcertEditPage"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textForAddNewConcertEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change the fields you want:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtConcertTitleEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForAddNewConcertEditPage" />
+
+    <EditText
+        android:id="@+id/concertDateEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConcertTitleEditPage" />
+
+    <TextView
+        android:id="@+id/textView8EditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Edit Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForChoseTitleEditPage" />
+
+    <EditText
+        android:id="@+id/txtLocationConcertEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concertDateEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForChoseLocationEditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Edit Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8EditPage" />
+
+    <EditText
+        android:id="@+id/firstNameEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneConcertForContactEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForEmailOnContactEditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Edit your email address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForFillPhoneEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForDescriptionShowEditPage"
+        android:layout_width="162dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="56dp"
+        android:text="Edit the description "
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForTicketsEditPage" />
+
+    <EditText
+        android:id="@+id/phoneConcertForContactEditPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLocationConcertEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForFillPhoneEditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Edit your phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForChoseLocationEditPage" />
+
+    <EditText
+        android:id="@+id/numberConcertPriceOfGrandstandTicketEditPage"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForPriceOfTicketsEditPage"
+        android:layout_width="156dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Edit price of grandstand ticket"
+        app:layout_constraintEnd_toStartOf="@+id/numberConcertPriceOfGrandstandTicketEditPage"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForEmailOnContactEditPage" />
+
+    <EditText
+        android:id="@+id/numberConcertGrandstandTicketsEditPage"
+        android:layout_width="91dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForTicketsEditPage" />
+
+    <TextView
+        android:id="@+id/textConcertForTicketsEditPage"
+        android:layout_width="209dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Edit number of Arena and Grandstan tickets"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberConcertPriceOfGrandstandTicketEditPage" />
+
+    <EditText
+        android:id="@+id/numberConcertArenaTicketsEditPage"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@+id/numberConcertGrandstandTicketsEditPage"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForTicketsEditPage" />
+
+    <EditText
+        android:id="@+id/multilineTextConcertForDescriptionEditPage"
+        android:layout_width="244dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConcertForDescriptionShowEditPage" />
+
+    <Button
+        android:id="@+id/buttonConcertSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multilineTextConcertForDescriptionEditPage"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

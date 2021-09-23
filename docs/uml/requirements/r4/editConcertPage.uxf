@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>110</y>
+      <w>400</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>selectedConcertPageModel
+-
+buttonSaveChanges: Button
+-
+onCreate(savedInstance: Bundle)
+getConcertTitle(): String
+getConcertDate(): Calendar
+getLocation(): String
+getPhoneNumber(): String
+getEmailAddress(): String
+getNumberOfArenaTickets(): int
+getNumberOfGrandStandTickets(): int
+getPriceOfGrandstand(): float
+getDescription(): String 
+setConcertTitle(String title): void 
+setConcertDate(Calendar date): void 
+setLocation(String location): void 
+setPhoneNumber(String phoneNumber): void 
+setEmailAddress(String emailAddress): void 
+setNumberOfArenaTickets(int numberOfArenaTickets): void 
+setNumberOfGrandStandTickets(int grandStandTickets): void 
+setPriceOfGrandstand(float priceOfGrandstand): void 
+setDescription(String description): void 
+getSelecterdConcertTitle(): String
+toReturnPage(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>100</y>
+      <w>330</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>editConcertPagePresenter
+-
+view: editConcertPageView
+concertDAOMemory: ConcertDAOMemory
+concerts: List&lt;Concert&gt;
+concert: String
+-
+onShowFields(): void
+onEditFields(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>380</y>
+      <w>400</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+editConcertPageView
+-
+getConcertTitle(): String
+getConcertDate(): Calendar
+getLocation(): String
+getPhoneNumber(): String
+getEmailAddress(): String
+getNumberOfArenaTickets(): int
+getNumberOfGrandStandTickets(): int
+getPriceOfGrandstand(): float
+getDescription(): String 
+setConcertTitle(String title): void 
+setConcertDate(Calendar date): void 
+setLocation(String location): void 
+setPhoneNumber(String phoneNumber): void 
+setEmailAddress(String emailAddress): void 
+setNumberOfArenaTickets(int numberOfArenaTickets): void 
+setNumberOfGrandStandTickets(int grandStandTickets): void 
+setPriceOfGrandstand(float priceOfGrandstand): void 
+setDescription(String description): void 
+getSelecterdConcertTitle(): String
+toReturnPage(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>410</y>
+      <w>280</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;layout&gt;&gt;
+activity_edit_concert_selected_page.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>200</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>310</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>150</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>270</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+ConcertDAO
+-
+find(title: String): Concert
+save(concert: Concert): void
+delete(concert: Concert): Concert
+findAll(): List&lt;Concert&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>240</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>120.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

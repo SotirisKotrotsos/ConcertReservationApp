@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>30</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Admin
+-
+-concerts: ArrayList&lt;Concert&gt; 
+- year: int
+- calendar: Calendar 
+- months: float[] 
+-
+showConcertsBySoldTickets(): Arraylist&lt;Concert&gt;
+showMonthOfMaxRevenueOfConcerts(): Object[] 
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>210</y>
+      <w>380</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>Concert
+-
+title: String  
+calendar: Calendar
+location: String
+ticktes: ArrayList&lt;Ticket&gt; 
+description: String
+contact: Contact 
+number_of_grandstand_tickets: int
+num_grand = 0: int
+number_of_arena_tickets: int
+num_arena = 0: int
+price_of_grandstand_ticket: float
+ticket_numbers: static long
+-
+reservationTicket(Consumer consumer,String typeOfTicket,
+boolean choiceToPayTicket)
+notifyConsumers(String message)
+notifyConsumersWithPayedTicket(String message)
+totalRevenue(): float
+totalTicketsSold(): int
+isFull(): boolean
+checkCategoryAvailability(String typeOfTicket):boolean
+notifyConsumersOnUpdateConcert()
+cancelConcert()
+isEmpty(): boolean
+
+
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1220</x>
+      <y>40</y>
+      <w>250</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Consumer
+-
+first_name: String
+last_name: String
+contact: Contact
+tickets: ArrayList&lt;Ticket&gt;
+-
+reserveTicket(Ticket ticket): boolean
+sendEmail(String message)
+purchaseTicket(Ticket ticket): boolean
+cancelTicket(Ticket ticket): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>680</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Contact
+-
+phone_number: String
+email: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1220</x>
+      <y>290</y>
+      <w>230</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Ticket
+-
+category: String
+ticket_number: long
+consumer: Consumer
+price_of_grandstand_ticket: float
+title: String
+calendar: Calendar
+date: Date
+location: String
+isPayed: boolean
+-
+isPayed(): boolean
+buyTicket()
+cancelPurchaseTicket()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
